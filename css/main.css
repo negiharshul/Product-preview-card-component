@@ -1,0 +1,84 @@
+.container{
+    display: flex;
+    background-color: white;
+    width: 500px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail img{
+    width: 250px;
+    height: 100%;
+    border-radius: 7px 0 0 7px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.product{
+    font-family: Montserrat;
+    font-size: 14px;
+    letter-spacing: 7px;
+    color: gray;
+    margin-bottom: 0;
+}
+
+.product-name{
+    font-family: Fraunces;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.product-description{
+    font-family: Montserrat;
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 0;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+}
+
+.offer{
+    font-family: Fraunces;
+    color: #3e7964;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.actual-price{
+    font-family: Montserrat;
+    text-decoration: line-through;
+    font-size: 14px;
+    color: gray;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: white;
+    background-color: #3d8168;
+    border-radius: 7px;
+}
+
+button img{
+    margin-right: 10px;
+}
+
+@media (max-width: 1000px) {
+    .container{
+        flex-direction: column;
+    }
+    .thumbnail img{
+        width: 100%;
+    }
+}
